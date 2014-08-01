@@ -93,11 +93,12 @@ exports.validate_doc_update = function (newDoc, oldDoc, userCtx) {
 
     } else {
       // edit
-      if (!hasRole(oldDoc.createdBy)) {
-        throw {
-          unauthorized: 'Only creator can edit this'
-        };
-      }
+      //TODO: Hack to allow anyone to edit it
+     // if (!hasRole(oldDoc.createdBy)) {
+     //    throw {
+     //      unauthorized: 'Only creator can edit this'
+     //    };
+      //}
     }
   } else {
     // create
