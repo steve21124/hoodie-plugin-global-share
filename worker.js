@@ -75,11 +75,11 @@ exports.validate_doc_update = function (newDoc, oldDoc, userCtx) {
     return;
   }
 
-  if (!userCtx.name) {
-    throw {
-      unauthorized: 'You must have an authenticated session'
-    };
-  }
+//  if (!userCtx.name) {
+//    throw {
+//      unauthorized: 'You must have an authenticated session'
+//    };
+//  }
 
   if (oldDoc) {
 
